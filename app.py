@@ -3,7 +3,7 @@ import requests
 import os
 from twilio.twiml.voice_response import VoiceResponse
 
-app = Flask(name)
+app = Flask(__name__)
 
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 
